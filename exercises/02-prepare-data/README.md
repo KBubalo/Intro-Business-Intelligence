@@ -293,14 +293,45 @@ Now that your data is clean and properly formatted, try to answer these question
 
 **Hint:** Create a PivotTable with Order Date in Rows and Line Total in Values.
 
+<details>
+<summary><b>Click to see answer</b></summary>
+
+| Year | Revenue |
+|------|----------|
+| 2011 | $8,778,552.00 |
+| 2012 | $27,133,701.38 |
+| 2013 | $32,890,351.72 |
+| 2014 | $11,685,099.08 |
+
+**How to get this:**
+- Create a PivotTable
+- Drag **Order Date** to Rows
+- Drag **Line Total** to Values
+- Excel will automatically group by year (thanks to proper date formatting in Power Query!)
+
+</details>
+
 ### Question 2: Best Month for Revenue
 **In which month (combining all years) did we generate the most revenue and how much?**
 
 **Hint:** Create a PivotTable with Order Date in Rows and Line Total in Values. Right-click on the dates → Group → Select Months only (uncheck Years). Sort by Line Total descending.
 
-> 💡 **Notice how easy this is?** Because you properly formatted the dates in Power Query, Excel can now automatically group them by year, month, and quarter. This is why data preparation matters!
+<details>
+<summary><b>Click to see answer</b></summary>
 
-> 💡 **Need help?** Check the [solution file](../00-solution/solution.md#exercise-02-prepare-data-with-power-query) for answers and step-by-step guidance.
+**Answer:** **March** generated the most revenue with $10,676,221.57
+
+**How to get this:**
+- Create a PivotTable
+- Drag **Order Date** to Rows
+- Drag **Line Total** to Values
+- Right-click on any date → **Group** → Select **Months** only (uncheck Years)
+- Sort by Line Total descending
+- March appears at the top
+
+</details>
+
+> 💡 **Notice how easy this is?** Because you properly formatted the dates in Power Query, Excel can now automatically group them by year, month, and quarter. This is why data preparation matters!
 
 ---
 

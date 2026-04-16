@@ -142,21 +142,104 @@ You'll see the PivotTable Fields pane on the right. Try this:
 Try to answer these questions using the tools you've learned:
 
 ### For Products:
-- How many products do we have in total?
-- How many different product categories or models do we have?
-- What is the list price range of our products?
+
+**1. How many products do we have in total?**
+<details>
+<summary><b>Click to see answer</b></summary>
+
+**Answer:** 295 products
+
+**How to get this:**
+- In the products worksheet, look at the row numbers in the table
+- The last row number minus 1 (header) gives you the count
+- Alternatively: Select the table and use the total row to count all non-empty cells in column A (ProductID)
+
+</details>
+</p>
+
+**2. How many different product categories or models do we have?**
+
+<details>
+<summary><b>Click to see answer</b></summary>
+**Answer:** 119 unique models
+
+**How to get this:**
+- Create a PivotTable with Model in the Rows area
+- Count the number of rows (minus header rows)
+- Alternative: Use Remove Duplicates on a copy of the Model column and count the remaining rows
+
+</details>
+</p>
+
+**3. What is the list price range of our products?**
+
+<details>
+<summary><b>Click to see answer</b></summary>
+
+**Answer:** $2.29 - $3,578.27
+
+**How to get this:**
+- Use `MIN` and `MAX` functions on the ListPrice column
+- Or enable Total Row and select Min/Max
+- Or use filter dropdown on ListPrice column to see min/max values
+- Or sort the table ascending/descending to see the extremes
+
+</details>
 
 ### For Orders:
-- How many unique orders were placed?
-- Which products appear most frequently in orders?
-- What is the total value of all orders?
+
+**4. How many unique orders were placed?**
+
+<details>
+<summary><b>Click to see answer</b></summary>
+
+**Answer:** 3,806 unique orders
+
+**How to get this:**
+- Create a PivotTable with SalesOrderID in the Rows area
+- Count the number of rows (minus header rows)
+- Alternative: Use Remove Duplicates on a copy of the SalesOrderID column and count remaining rows
+
+</details>
+</p>
+
+**5. Which products appear most frequently in orders?**
+
+<details>
+<summary><b>Click to see answer</b></summary>
+
+**Answer:**
+- Product 712: 1,192 times
+- Product 715: 1,183 times
+- Product 711: 965 times
+
+**How to get this:**
+- Create a PivotTable with ProductID in Rows area
+- Put ProductID in Values area (set to Count)
+- Sort the count column descending
+- View top 3 products
+
+</details>
+</p>
+
+**6. What is the total value of all orders?**
+
+<details>
+<summary><b>Click to see answer</b></summary>
+
+**Answer:** $80,487,704.18
+
+**How to get this:**
+- Use the `SUM` function on the LineTotal column
+- Or enable Total Row and sum the LineTotal column
+- Or create a PivotTable with LineTotal in Values area (set to Sum)
+
+</details>
 
 ### Tips:
 - Use **SUM**, **AVERAGE**, **COUNT** functions in a blank cell below your data
 - Use PivotTables to group and summarize
 - Apply filters to focus on specific segments
-
-> 💡 **Need help?** Once you've tried these questions, you can check your answers in the [solution file](../00-solution/solution.md).
 
 > 🚀 **Optional Challenge (Advanced)**  
 > Try to answer this question using only Excel:
