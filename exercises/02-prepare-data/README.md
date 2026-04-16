@@ -300,7 +300,7 @@ Now that your data is clean and properly formatted, try to answer these question
 
 > 💡 **Notice how easy this is?** Because you properly formatted the dates in Power Query, Excel can now automatically group them by year, month, and quarter. This is why data preparation matters!
 
-> 💡 **Need help?** Check the [solution file](../solution.md#exercise-02-prepare-data-with-power-query) for answers and step-by-step guidance.
+> 💡 **Need help?** Check the [solution file](../00-solution/solution.md#exercise-02-prepare-data-with-power-query) for answers and step-by-step guidance.
 
 ---
 

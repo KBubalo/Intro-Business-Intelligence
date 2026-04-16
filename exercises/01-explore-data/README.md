@@ -156,7 +156,7 @@ Try to answer these questions using the tools you've learned:
 - Use PivotTables to group and summarize
 - Apply filters to focus on specific segments
 
-> 💡 **Need help?** Once you've tried these questions, you can check your answers in the [solution file](../solution.md).
+> 💡 **Need help?** Once you've tried these questions, you can check your answers in the [solution file](../00-solution/solution.md).
 
 > 🚀 **Optional Challenge (Advanced)**  
 > Try to answer this question using only Excel:
