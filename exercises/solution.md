@@ -40,9 +40,46 @@ This file contains answers to the exploration and analysis questions across all 
 
 ---
 
-## Exercise 02: [Future Exercise]
+## Exercise 02: Prepare Data with Power Query
 
-*Solutions will be added here as exercises are completed*
+### Analysis Questions
+
+Now that your data is clean and properly formatted, try to answer these questions using PivotTables:
+
+**1. How much revenue did we generate in 2011, 2012, 2013, and 2014?**
+
+Create a PivotTable:
+- Drag **Order Date** to Rows
+- Drag **Line Total** to Values
+
+**Answer:**
+- 2011: 8,778,552.00
+- 2012: 27,133,701.38
+- 2013: 32,890,351.72
+- 2014: 11,685,099.08
+
+**2. In which month (combining all years) did we generate the most revenue and how much?**
+
+Create a PivotTable:
+- Drag **Order Date** to Rows
+- Drag **Line Total** to Values
+- Sort the Line Total column descending
+
+**Answer:**
+- **March** generated the most revenue: 10'676'221.57
+
+> 💡 **Notice how easy this is now?** Because you properly formatted the dates in Power Query, Excel can now group them by year, month, quarter automatically. This is why data preparation matters!
+
+**Key learning:** Students learned to:
+- Investigate errors (scrolling to find them, analyzing error messages)
+- Navigate backwards through Power Query steps to fix issues at their source
+- Modify earlier steps and see how subsequent steps automatically update
+- Use locale settings to handle international date formats
+- Understand that Power Query's step-based approach is non-linear and powerful
+
+### Key Concept: Refreshable Queries
+
+The power of Power Query is that all transformations are saved as steps. When the source CSV file is updated, you can refresh the query (**Data → Refresh All**) and all cleaning steps are automatically reapplied.
 
 ---
 
