@@ -33,13 +33,13 @@ The goal is **not** to create pretty dashboards or master advanced formatting. I
 
 **Key principle:** Visualization does not fix bad data, but bad visualization can hide good insights.
 
-**Estimated time:** 45-60 minutes
+**Estimated time:** 30-45 minutes
 
 ---
 
 ## The Business Question
 
-Throughout this exercise, you'll answer the **some business question** using different visualizations:
+Throughout this exercise, you'll answer the **same business question** using different visualizations:
 
 > **Which product category generates the second highest revenue?**  
 > **Roughly how high is the revenue?**  
