@@ -14,6 +14,7 @@ This course takes a practical, step-by-step approach to learning business intell
 - Data quality assessment
 - Star Schema data modeling concepts
 - Relationships between tables
+- Extending and evolving data models
 - Visualization design principles
 - How to choose the right chart for your question
 - Building interactive dashboards with KPIs and slicers
@@ -66,7 +67,13 @@ Work through the exercises in order. Each exercise builds on the knowledge from 
 
 [Start Step 5 →](exercises/05-build-dashboard/README.md)
 
-### Step 6: Advanced Analysis
+### Step 6: Extend Your Data Model
+**Status:** ✅ Available  
+**Focus:** Add new dimension tables to an existing model, create relationships, update dashboards with better data
+
+[Start Step 6 →](exercises/06-extend-data-model/README.md)
+
+### Step 7: Advanced Analysis
 **Status:** 🔜 Coming Soon  
 **Focus:** Complex queries, advanced PivotTables, insights and reporting
 
