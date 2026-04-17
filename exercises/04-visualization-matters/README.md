@@ -41,12 +41,12 @@ The goal is **not** to create pretty dashboards or master advanced formatting. I
 
 Throughout this exercise, you'll answer the **same business question** using different visualizations:
 
-> **Which product category generates the second highest revenue?**  
+> **Which country generates the second highest revenue?**  
 > **Roughly how high is the revenue?**  
 > **How confident are you in your answer?**
 
 Notice that this question requires you to:
-- **Compare** values across categories
+- **Compare** values across countries
 - **Rank** them (find the second highest)
 - **Read** approximate values from the visual
 
@@ -60,7 +60,7 @@ Keep these requirements in mind as you work through the exercise.
 
 By now, you should have an Excel workbook with:
 - A **Star Schema data model** (fact table + dimension tables)
-- **Relationships** between orders and products (via ProductID)
+- **Relationships** between orders and employees (via EmployeeID)
 - The **employees** table contains a **Country** column
 - The **orders** table contains measurable data like **Revenue** or **OrderTotal**
 
@@ -88,7 +88,7 @@ You should now see an empty PivotTable on a new sheet.
 
 ### Step 2: Add Fields to the PivotTable
 
-Now you'll configure the PivotTable to show revenue by product category.
+Now you'll configure the PivotTable to show revenue by country.
 
 1. In the **PivotTable Fields** pane on the right:
    - **Drag** `Country` (from Employees) to the **Rows** area
