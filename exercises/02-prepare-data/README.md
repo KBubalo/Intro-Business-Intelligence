@@ -228,7 +228,7 @@ Make column names business-friendly:
 | `OrderQty` | `Quantity` |
 | `UnitPrice` | `Unit Price` |
 | `UnitPriceDiscount` | `Unit Price Discount` |
-| `LineTotal` | `Line Total` |
+| `LineTotal` | `Revenue` |
 
 ---
 
@@ -237,7 +237,7 @@ Make column names business-friendly:
 Quick check—make sure these are set correctly:
 - **Quantity**: Whole Number
 - **Unit Price**: Decimal Number
-- **Line Total**: Decimal Number
+- **Revenue**: Decimal Number
 
 To change: Click column header → **Transform** → **Data Type** → select type
 
@@ -276,7 +276,7 @@ Look at the **Applied Steps** pane (right side). You should see steps like:
 
 1. Click in your table → **Insert** → **PivotTable**
 2. Drag **OrderDate** to **Rows**
-3. Drag **Line Total** to **Values**
+3. Drag **Revenue** to **Values**
 
 **Expected result:** Dates should work properly! Excel may offer to group by months/quarters/years.
 
@@ -291,7 +291,7 @@ Now that your data is clean and properly formatted, try to answer these question
 ### Question 1: Revenue by Year
 **How much revenue did we generate in 2011, 2012, 2013, and 2014?**
 
-**Hint:** Create a PivotTable with Order Date in Rows and Line Total in Values.
+**Hint:** Create a PivotTable with Order Date in Rows and Revenue in Values.
 
 <details>
 <summary><b>Click to see answer</b></summary>
@@ -306,7 +306,7 @@ Now that your data is clean and properly formatted, try to answer these question
 **How to get this:**
 - Create a PivotTable
 - Drag **Order Date** to Rows
-- Drag **Line Total** to Values
+- Drag **Revenue** to Values
 - Excel will automatically group by year (thanks to proper date formatting in Power Query!)
 
 </details>
@@ -314,7 +314,7 @@ Now that your data is clean and properly formatted, try to answer these question
 ### Question 2: Best Month for Revenue
 **In which month (combining all years) did we generate the most revenue and how much?**
 
-**Hint:** Create a PivotTable with Order Date in Rows and Line Total in Values. Right-click on the dates → Group → Select Months only (uncheck Years). Sort by Line Total descending.
+**Hint:** Create a PivotTable with Order Date in Rows and Revenue in Values. Right-click on the dates → Group → Select Months only (uncheck Years). Sort by Revenue descending.
 
 <details>
 <summary><b>Click to see answer</b></summary>
@@ -324,9 +324,9 @@ Now that your data is clean and properly formatted, try to answer these question
 **How to get this:**
 - Create a PivotTable
 - Drag **Order Date** to Rows
-- Drag **Line Total** to Values
+- Drag **Revenue** to Values
 - Right-click on any date → **Group** → Select **Months** only (uncheck Years)
-- Sort by Line Total descending
+- Sort by Revenue descending
 - March appears at the top
 
 </details>

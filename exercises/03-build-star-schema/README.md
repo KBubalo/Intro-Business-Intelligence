@@ -440,7 +440,7 @@ You should see columns like:
 - OrderQty
 - UnitPrice
 - UnitPriceDiscount
-- LineTotal
+- Revenue (or Line Total, depending on your naming)
 
 ### Identify the Keys (Important!)
 
@@ -467,7 +467,7 @@ Make sure all columns have correct data types (you should have done this in Exer
 9. **OrderQty** (or **Quantity**): **Whole Number**
 10. **UnitPrice** (or **Unit Price**): **Decimal Number**
 11. **UnitPriceDiscount** (or **Unit Price Discount**): **Decimal Number**
-12. **LineTotal** (or **Line Total**): **Decimal Number**
+12. **Revenue** (or **Line Total**): **Decimal Number**
 
 > ✅ **If everything looks good from Exercise 02, you don't need to make changes.**
 
@@ -679,7 +679,7 @@ Let's see which products generate the most revenue:
 1. Expand the **Products** table in the field list
 2. Drag **Product Name** to **Rows**
 3. Expand the **Orders** table
-4. Drag **Line Total** to **Values**
+4. Drag **Revenue** to **Values**
 
 **What you see:** Total sales for each product!
 
@@ -689,7 +689,7 @@ Let's see which products generate the most revenue:
 
 1. Create a new PivotTable (Insert → PivotTable → Use Data Model)
 2. Drag **Customer Name** (from Customers) to **Rows**
-3. Drag **Line Total** (from Orders) to **Values**
+3. Drag **Revenue** (from Orders) to **Values**
 
 **What you see:** Total sales per customer!
 
@@ -701,7 +701,7 @@ Let's use the Date dimension:
 2. Drag **Year** (from Date) to **Rows**
 3. Drag **Quarter** (from Date) below Year in Rows
 4. Drag **Month Name** (from Date) below Quarter
-5. Drag **Line Total** (from Orders) to **Values**
+5. Drag **Revenue** (from Orders) to **Values**
 
 **What you see:** A beautiful time hierarchy showing sales by year, quarter, and month!
 
@@ -713,7 +713,7 @@ Who are your top sales performers?
 
 1. Create a new PivotTable
 2. Drag **Employee Name** (from Employees) to **Rows**
-3. Drag **Line Total** (from Orders) to **Values**
+3. Drag **Revenue** (from Orders) to **Values**
 4. Right-click any value → **Sort** → **Largest to Smallest**
 
 **What you see:** Sales performance by employee!
@@ -725,7 +725,7 @@ Try this advanced analysis:
 1. Create a new PivotTable
 2. Drag **Year** (from Date) to **Columns**
 3. Drag **Product Name** (from Products) to **Rows**
-4. Drag **Line Total** (from Orders) to **Values**
+4. Drag **Revenue** (from Orders) to **Values**
 
 **What you see:** A matrix showing product sales across years!
 
@@ -738,7 +738,7 @@ Test your new data model by answering these questions:
 ### Question 1: Top 5 Products by Revenue
 Which 5 products generated the most revenue overall?
 
-**Hint:** PivotTable with Product Name and Line Total, sorted descending.
+**Hint:** PivotTable with Product Name and Revenue, sorted descending.
 
 <details>
 <summary><b>Click to see answer</b></summary>
@@ -775,7 +775,7 @@ How much revenue did we generate in each quarter of 2013?
 ### Question 3: Top Customer
 Which customer spent the most money across all years?
 
-**Hint:** PivotTable with Customer Name and Line Total.
+**Hint:** PivotTable with Customer Name and Revenue.
 
 <details>
 <summary><b>Click to see answer</b></summary>
@@ -787,7 +787,7 @@ Which customer spent the most money across all years?
 ### Question 4: Top Sales Employee
 Which employee sold the most in 2014?
 
-**Hint:** PivotTable with Employee Full Name and Line Total. Filter to Year = 2014.
+**Hint:** PivotTable with Employee Full Name and Revenue. Filter to Year = 2014.
 
 <details>
 <summary><b>Click to see answer</b></summary>

@@ -10,10 +10,12 @@ This course takes a practical, step-by-step approach to learning business intell
 
 - How to import and connect to data sources
 - Data exploration techniques
-- Data cleaning and transformation
+- Data cleaning and transformation with Power Query
 - Data quality assessment
-- Basic data modeling concepts
+- Star Schema data modeling concepts
 - Relationships between tables
+- Visualization design principles
+- How to choose the right chart for your question
 - Analysis and reporting fundamentals
 
 ### Who This Course Is For
@@ -39,17 +41,23 @@ Work through the exercises in order. Each exercise builds on the knowledge from 
 
 [Start Step 1 →](exercises/01-explore-data/README.md)
 
-### Step 2: Data Transformation and Cleaning
-**Status:** 🔜 Coming Soon  
-**Focus:** Clean and transform data, fix date formats, handle missing values
+### Step 2: Data Preparation with Power Query
+**Status:** ✅ Available  
+**Focus:** Clean and transform data using Power Query, fix date formats, handle errors, prepare data for analysis
 
-### Step 3: Working with Multiple Tables
-**Status:** 🔜 Coming Soon  
-**Focus:** Understand relationships, combine data from multiple sources
+[Start Step 2 →](exercises/02-prepare-data/README.md)
 
-### Step 4: Introduction to Data Modeling
-**Status:** 🔜 Coming Soon  
-**Focus:** Build your first data model, define relationships, best practices
+### Step 3: Build a Star Schema Data Model
+**Status:** ✅ Available  
+**Focus:** Create fact and dimension tables, build relationships, understand Star Schema design principles
+
+[Start Step 3 →](exercises/03-build-star-schema/README.md)
+
+### Step 4: Visualization Matters
+**Status:** ✅ Available  
+**Focus:** Learn why visualization choice impacts decision-making, compare good vs. poor visual design, create effective charts
+
+[Start Step 4 →](exercises/04-visualization-matters/README.md)
 
 ### Step 5: Advanced Analysis
 **Status:** 🔜 Coming Soon  
