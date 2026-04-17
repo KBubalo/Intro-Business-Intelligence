@@ -16,6 +16,7 @@ This course takes a practical, step-by-step approach to learning business intell
 - Relationships between tables
 - Visualization design principles
 - How to choose the right chart for your question
+- Building interactive dashboards with KPIs and slicers
 - Analysis and reporting fundamentals
 
 ### Who This Course Is For
@@ -59,7 +60,13 @@ Work through the exercises in order. Each exercise builds on the knowledge from 
 
 [Start Step 4 →](exercises/04-visualization-matters/README.md)
 
-### Step 5: Advanced Analysis
+### Step 5: Build Your First Dashboard
+**Status:** ✅ Available  
+**Focus:** Create a complete single-screen dashboard in Excel with KPIs, time trends, ranking visuals, and interactive slicers
+
+[Start Step 5 →](exercises/05-build-dashboard/README.md)
+
+### Step 6: Advanced Analysis
 **Status:** 🔜 Coming Soon  
 **Focus:** Complex queries, advanced PivotTables, insights and reporting
 
