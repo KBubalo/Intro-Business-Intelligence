@@ -263,24 +263,9 @@ Let's fix this by creating a model and a relationship:
 
 **What you just did:** You told Excel that the Product ID in Orders matches the Product ID in Products.
 
-### Ensure the PivotTable Uses the Data Model
-
-To make sure the relationship works, you need a PivotTable that uses the Data Model:
-
-1. **Close your current PivotTable worksheet** (or just create a new one)
-2. Go to **Insert** tab → **PivotTable** drop down → **From Data Model**
-3. In the dialog, select **New Worksheet**
-4. Click **OK**
-
 ### Test the Fix
 
-In your new PivotTable (that uses the Data Model):
-
-1. Expand the **Products** table
-2. Drag **Product Name** to the **Rows** area
-3. Expand the **Orders** table
-4. Drag **Sales Order ID** to the **Values** area
-5. Change the aggregation to **Count**
+In your existing PivotTable, the numbers should automatically update. If not, refresh the PivotTable (right-click → Refresh).
 
 **What changed?** The counts should now be realistic! Each product now shows the actual number of orders it appears in (between 2 and 1192 orders per product is right, not 60919!).
 
@@ -617,12 +602,6 @@ Remember from Step 1a:
 
 Now we'll create relationships for Customers, Employees, and the Date dimension.
 
----
-
-## SECTION 6: Create the Remaining Relationships
-
-Let's connect the other dimensions to the Orders fact table.
-
 ### Review: The Product Relationship (Already Created)
 
 In Step 1a, you already created:
@@ -681,7 +660,7 @@ If Excel supports Diagram View:
 
 ---
 
-## SECTION 7: Test Your Data Model
+## SECTION 6: Test Your Data Model
 
 Now let's see the power of a properly modeled star schema.
 

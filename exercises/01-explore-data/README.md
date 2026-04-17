@@ -114,7 +114,7 @@ PivotTables are powerful tools for summarizing and exploring data.
 
 **Example: Analyze the orders data**
 
-1. Click anywhere in the orders table
+1. Click anywhere in the **orders** table
 2. Go to **Insert** → **PivotTable**
 3. Ensure "Select a table or range" includes your entire data table
 4. Choose **New Worksheet**
