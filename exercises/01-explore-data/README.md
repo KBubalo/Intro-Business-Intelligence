@@ -15,6 +15,8 @@ Welcome to the first exercise! In this step, you'll learn how to import CSV file
 - Microsoft Excel 2016 or newer (including Microsoft 365)
 - The CSV files from the `data` folder in this repository
 
+**Estimated time:** 30-40 minutes
+
 ---
 
 ## Goal of This Exercise
@@ -266,18 +268,34 @@ You might notice that:
 
 - What questions about this data would you like to answer, but cannot yet?
 - What information do you feel is missing?
-- What feels difficult or unclear when exploring the data?
+- What patterns or interesting insights did you notice while exploring?
+
+---
+
+## Congratulations!
+
+You've completed the first exercise! 🎉
+
+You've learned how to:
+- Import CSV files into Excel
+- Explore data structure and content
+- Use basic sorting and filtering
+- Create simple PivotTables
+- Identify data quality issues
 
 ---
 
 ## What's Next?
 
-Once you're comfortable exploring the data in Excel, you're ready to move on to the next step where you'll learn how to:
-- Clean and transform data (including fixing those date formats!)
-- Prepare data for analysis
-- Handle missing or incorrect values
+Ready to clean and transform your data? In **Exercise 02: Prepare Data with Power Query**, you'll learn how to:
+- Fix those date format issues you discovered
+- Clean and transform data using Power Query
+- Handle errors and missing values
+- Build a repeatable ETL process
 
-Return to the [main README](../../README.md) to continue to Step 2.
+[Continue to Exercise 02 →](../02-prepare-data/README.md)
+
+Or return to the [main README](../../README.md) to see all exercises.
 
 ---
 

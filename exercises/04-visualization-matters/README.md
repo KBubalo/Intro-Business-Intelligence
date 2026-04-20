@@ -207,7 +207,7 @@ Your pie chart will instantly transform into a horizontal bar chart.
 
 Now let's sort the countries by revenue, from highest to lowest.
 
-1. Right-click on any country in the chart (on the vertical axis)
+1. Right-click on any value (bar) in the chart 
 2. Select **Sort** → **Sort Largest to Smallest**
 
 Now the countries are ordered by revenue, with the highest at the top.
@@ -353,11 +353,20 @@ You've learned that:
 - Choosing the right chart type is a critical skill in business intelligence
 - Good visuals help people make better decisions faster
 
-### Final Reflection
+---
 
-Before you move on, answer this question:
+## What's Next?
 
-> **In your own words, why does visualization matter in business intelligence?**
+Now that you understand visualization principles, you're ready to build a complete dashboard! In **Exercise 05: Build Your First Dashboard**, you'll learn how to:
+- Combine multiple visuals into a single-screen dashboard
+- Create KPI cards, time trends, and ranking charts
+- Add interactivity with slicers
+- Evaluate and improve dashboard design
+- Answer real business questions with your dashboard
+
+[Continue to Exercise 05 →](../05-build-dashboard/README.md)
+
+Or return to the [main README](../../README.md) to see all exercises.
 
 ---
 

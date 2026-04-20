@@ -18,6 +18,8 @@ Welcome to the second exercise! In this step, you'll learn how to clean and tran
 - Completed Exercise 01 (or basic familiarity with the orders.csv file)
 - The **orders.csv** file from the `data` folder
 
+**Estimated time:** 45-60 minutes
+
 ---
 
 ## Goal of This Exercise
@@ -389,18 +391,31 @@ Now that your data is clean and properly formatted, try to answer these question
 
 ---
 
+## Congratulations!
+
+You've completed Exercise 02! 🎉
+
+You've learned how to:
+- Use Power Query to clean and transform data
+- Fix date formats using locale settings
+- Handle errors and data quality issues
+- Build repeatable ETL processes
+- Prepare data for time-based analysis
+
+---
+
 ## What's Next?
 
-You've now learned how to **prepare data** using Power Query. Your data is clean, well-typed, and ready for analysis.
+Your data is now clean and ready! In **Exercise 03: Build a Star Schema Data Model**, you'll learn how to:
+- Combine multiple tables (orders, products, customers, employees)
+- Create relationships between tables
+- Build a Date dimension for time intelligence
+- Understand Star Schema architecture
+- Use the Data Model for powerful analysis
 
-In the next exercise, you will:
-- Learn how to combine multiple tables (orders + products)
-- Create relationships between data
-- Build a simple data model
+[Continue to Exercise 03 →](../03-build-star-schema/README.md)
 
-But for now, you've mastered the foundation: **ETL and data preparation**.
-
-Return to the [main README](../../README.md) to continue to Step 3.
+Or return to the [main README](../../README.md) to see all exercises.
 
 ---
 

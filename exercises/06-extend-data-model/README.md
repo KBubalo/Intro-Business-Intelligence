@@ -321,10 +321,42 @@ You've learned that:
 - Relationships are the glue that connects your data
 - Good design makes maintenance easier and reporting more powerful
 
-### Save Your Work
+---
 
-Make sure to save your Excel workbook. You now have a richer data model that supports more sophisticated analysis!
+## What's Next?
+
+Congratulations on completing all 6 exercises! 🎓
+
+You've built a solid foundation in business intelligence:
+- ✅ Data exploration and import
+- ✅ Data cleaning with Power Query (ETL)
+- ✅ Star Schema data modeling
+- ✅ Visualization best practices
+- ✅ Dashboard building
+- ✅ Extending and evolving data models
+
+### Continue Your Learning Journey:
+
+**Next steps in Excel:**
+- Learn DAX (Data Analysis Expressions) for calculated measures
+- Explore Power Pivot advanced features
+- Build hierarchies for drill-down analysis
+- Practice with more complex business scenarios
+
+**Expand to Power BI:**
+- Everything you learned applies to Power BI Desktop
+- More powerful visualizations and interactivity
+- Cloud-based sharing and collaboration
+- Advanced analytics and AI features
+
+**Practice with real data:**
+- Find public datasets (Kaggle, government open data)
+- Apply these techniques to your own work
+- Build a portfolio of dashboards
+- Challenge yourself with new business questions
+
+[Return to main README](../../README.md) to review all exercises.
 
 ---
 
-**You've completed Step 6!** You now know how to extend and evolve data models as business needs change. Keep building! 📊✨
+**You've completed all 6 exercises!** You now have practical business intelligence skills. Keep building, keep learning! 📊✨🚀

@@ -102,10 +102,11 @@ Products describe **what** was sold.
 
 ### Load Products into Power Query
 
-1. Use the existing **Excel workbook** with orders table already transformed
-2. Go to **Data** tab → **Get Data** → **From File** → **From Text/CSV**
-3. Select **products.csv**
-4. In the preview window, click **Transform Data** (NOT Load)
+Use the existing **Excel workbook** with orders table already transformed
+   1. If you haven't done so, load the products.csv table
+   2. Go to **Data** tab → **Get Data** → **From File** → **From Text/CSV**
+   3. Select **products.csv**
+   4. In the preview window, click **Transform Data** (NOT Load)
 
 ### Inspect the Data
 
@@ -653,7 +654,7 @@ In Step 1a, you already created:
 ### View Your Star Schema (Optional)
 
 If Excel supports Diagram View:
-1. Go to **Power Pivot** → **Manage** → **Diagram View**
+1. Go to **Power Pivot** → **Manage** → **Diagram View** in the Ribbon
 2. You should see Orders in the center with lines connecting to the four dimensions
 
 **This is your Star Schema!** ⭐
@@ -666,8 +667,7 @@ Now let's see the power of a properly modeled star schema.
 
 ### Create a PivotTable
 
-1. Go to **Insert** tab → **PivotTable**
-2. **Important:** Select **Use this workbook's Data Model**
+1. Go to **Insert** tab → **PivotTable** drop down list → Select **Use this workbook's Data Model**
 3. Click **OK**
 
 **What's different?** Now you see ALL tables in the field list!
@@ -687,9 +687,8 @@ Let's see which products generate the most revenue:
 
 ### Analysis 2: Sales by Customer
 
-1. Create a new PivotTable (Insert → PivotTable → Use Data Model)
-2. Drag **Customer Name** (from Customers) to **Rows**
-3. Drag **Revenue** (from Orders) to **Values**
+1. Remove **Product Name** from Rows
+2. Drag **Full Name** (from Customers) to **Rows**
 
 **What you see:** Total sales per customer!
 
@@ -697,11 +696,10 @@ Let's see which products generate the most revenue:
 
 Let's use the Date dimension:
 
-1. Create a new PivotTable
+1. Remove **Full Name** from Rows
 2. Drag **Year** (from Date) to **Rows**
 3. Drag **Quarter** (from Date) below Year in Rows
 4. Drag **Month Name** (from Date) below Quarter
-5. Drag **Revenue** (from Orders) to **Values**
 
 **What you see:** A beautiful time hierarchy showing sales by year, quarter, and month!
 
@@ -711,9 +709,8 @@ Let's use the Date dimension:
 
 Who are your top sales performers?
 
-1. Create a new PivotTable
-2. Drag **Employee Name** (from Employees) to **Rows**
-3. Drag **Revenue** (from Orders) to **Values**
+1. Remove **Year**, **Quarter**, and **Month Name** from Rows
+2. Drag **Full Name** (from Employees) to **Rows**
 4. Right-click any value → **Sort** → **Largest to Smallest**
 
 **What you see:** Sales performance by employee!
@@ -722,10 +719,9 @@ Who are your top sales performers?
 
 Try this advanced analysis:
 
-1. Create a new PivotTable
+1. Remove **Quarter** and **Month Name** from Rows
 2. Drag **Year** (from Date) to **Columns**
 3. Drag **Product Name** (from Products) to **Rows**
-4. Drag **Revenue** (from Orders) to **Values**
 
 **What you see:** A matrix showing product sales across years!
 
@@ -837,17 +833,30 @@ Take a moment to think about what you learned:
 
 ---
 
+## Congratulations!
+
+You've completed Exercise 03! 🎉
+
+You've learned how to:
+- Build a complete Star Schema data model
+- Create fact and dimension tables
+- Build relationships between tables
+- Create a Date dimension for time intelligence
+- Use the Data Model for cross-table analysis
+
+---
+
 ## What's Next?
 
-You've built a complete Star Schema data model! 🎉
+You have a solid data model! In **Exercise 04: Visualization Matters**, you'll learn how to:
+- Understand why visualization choice affects decision-making
+- Compare effective vs. poor visualization designs
+- Choose the right chart type for your business questions
+- Apply visualization best practices
 
-You now understand:
-- How to prepare fact and dimension tables
-- How to create relationships
-- How the Star Schema enables powerful analysis
-- How to use the Data Model in PivotTables
+[Continue to Exercise 04 →](../04-visualization-matters/README.md)
 
-For now, you've mastered the foundation: **the Star Schema**.
+Or return to the [main README](../../README.md) to see all exercises.
 
 ---
 

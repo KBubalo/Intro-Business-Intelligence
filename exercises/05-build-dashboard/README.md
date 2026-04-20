@@ -67,8 +67,6 @@ This mirrors real-world BI work: iterate, don't aim for perfection on the first 
 
 ## SECTION 1: Prepare Your Workspace
 
-**⏱️ Estimated time: 5 minutes**
-
 Before building the dashboard, you need a clean workspace.
 
 ### Step 1: Open Your Existing Workbook
@@ -104,8 +102,6 @@ Your worksheet now looks like a blank canvas, perfect for building a professiona
 ---
 
 ## SECTION 2: First Draft – Build KPI Cards
-
-**⏱️ Estimated time: 15 minutes**
 
 KPI cards are simple visuals that show **one number prominently**. They answer "How much?" or "How many?" at a glance.
 
@@ -231,8 +227,6 @@ Now let's create the third KPI card showing Average Order Value (AOV).
 ---
 
 ## SECTION 3: First Draft – Build Time Trend Visual
-
-**⏱️ Estimated time: 10 minutes**
 
 Now you'll create a line chart showing **Revenue over Time** to answer "Are we performing better or worse?"
 
@@ -384,8 +378,6 @@ Now your chart clearly shows both the revenue trend and growth rate, with proper
 
 ## SECTION 4: First Draft – Build Product Ranking Visual
 
-**⏱️ Estimated time: 10 minutes**
-
 Now you'll create a bar chart showing **which products (or product categories) generate the most revenue**.
 
 **Pro tip:** For dashboards, you can create a PivotChart directly without showing a separate PivotTable on the worksheet. This keeps your dashboard cleaner!
@@ -455,8 +447,6 @@ Now your models are ranked from highest to lowest revenue, with the top performe
 
 ## SECTION 5: Add Interactivity with Slicers
 
-**⏱️ Estimated time: 5 minutes**
-
 Slicers allow users to filter the dashboard interactively (e.g., "Show me revenue for 2022 only" or "Show me only Electronics").
 
 ### Step 1: Insert a Slicer for Year
@@ -517,8 +507,6 @@ Follow the same steps as above for each slicer.
 
 ## SECTION 6: The 30-Second Test – Evaluate Your Dashboard
 
-**⏱️ Estimated time: 5 minutes**
-
 Now step back and evaluate your dashboard. Imagine you're a manager who just opened this file. Can you answer the business questions in **30 seconds or less**?
 
 ### The 30-Second Test
@@ -560,8 +548,6 @@ Answer these questions honestly:
 ---
 
 ## SECTION 7: Improve Your Dashboard
-
-**⏱️ Estimated time: 10-15 minutes**
 
 Based on your evaluation, now improve your dashboard. Here are common improvements:
 
@@ -637,8 +623,6 @@ After making improvements:
 
 ## SECTION 8: Final Deliverable Checklist and Reflection
 
-**⏱️ Estimated time: 5 minutes**
-
 Before you finish, verify your dashboard meets all requirements:
 
 ### Final Deliverable Checklist
@@ -657,6 +641,53 @@ Before you finish, verify your dashboard meets all requirements:
 
 ---
 
+## Verification Questions
+
+Before moving to the next exercise, verify your dashboard was built correctly:
+
+### 1. How many KPI cards did you create?
+**Expected answer:** At least 3 KPI cards showing:
+- Total Revenue (large, bold number with currency format)
+- Number of Orders (whole number with thousand separator)
+- Average Order Value (currency with 2 decimals)
+
+### 2. Does your time trend chart show two lines (Revenue and Revenue Growth %)?
+**How to verify:**
+- Look at your line chart
+- Expected: Two lines with different Y-axes (left axis = currency, right axis = percentage)
+- Legend should show both measures
+
+**If you only see one line:** You didn't add the second Revenue field or didn't configure "% Difference From"
+
+### 3. Are months sorted chronologically (not alphabetically)?
+**How to check:** Look at the X-axis of your time trend chart  
+**Expected:** January, February, March... (chronological order)  
+**Wrong:** April, August, December... (alphabetical)  
+
+**If alphabetical:** You need to use "Sort by Column" in the Data Model (MonthName sorted by MonthNumber)
+
+### 4. Is your product ranking chart sorted by value (highest to lowest)?
+**Expected:** The bar chart shows the category with highest revenue at the top, decreasing downward
+
+**If not sorted:** Right-click category names → Sort → Sort Largest to Smallest
+
+### 5. Does your Year slicer filter ALL visuals on the dashboard?
+**How to test:**
+- Click on a year in the slicer (e.g., 2013)
+- All KPI cards and charts should update to show only that year's data
+- Click again to deselect
+
+**If some visuals don't filter:** Right-click slicer → Report Connections → Check all boxes
+
+### 6. Can you answer both business questions in 30 seconds?
+**Test yourself:**
+1. "Are we performing better or worse over time?" → Look at time trend chart (is the line going up or down?)
+2. "Which products contribute most to success?" → Look at ranking chart (top bar = highest)
+
+**Expected:** You should answer both questions immediately without studying the dashboard
+
+---
+
 ## Congratulations!
 
 You've built your first business intelligence dashboard! 🎉
@@ -667,18 +698,21 @@ You've learned that:
 - Visualization choice matters: line charts for trends, bar charts for ranking, KPIs for key metrics
 - Iteration is key: build fast, evaluate, improve
 
-### What's Next?
+---
 
-In future work, you can:
-- Learn more advanced Excel features (calculated fields, custom measures)
-- Explore Power BI for more sophisticated dashboards
-- Practice storytelling with data (how to present findings)
-- Build dashboards for different audiences (executives, managers, analysts)
+## What's Next?
 
-### Save Your Work
+Your dashboard is working, but the data model can be even better! In **Exercise 06: Extend Your Data Model**, you'll learn how to:
+- Add new dimension tables to an existing model
+- Create relationships between new and existing tables
+- Update dashboards to use richer dimensional data
+- Understand snowflake schema patterns
+- Maintain and evolve data models over time
 
-Make sure to save your Excel workbook. You've built something valuable that you can reference in the future or include in your portfolio!
+[Continue to Exercise 06 →](../06-extend-data-model/README.md)
+
+Or return to the [main README](../../README.md) to see all exercises.
 
 ---
 
-**You've completed Step 5!** You now have the skills to build decision-ready dashboards in Excel. Keep practicing and exploring new ways to visualize data! 📊✨
+**You've completed Step 5!** You now have the skills to build decision-ready dashboards in Excel. Keep practicing! 📊✨
