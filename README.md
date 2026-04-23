@@ -73,9 +73,6 @@ Work through the exercises in order. Each exercise builds on the knowledge from 
 
 [Start Step 6 →](exercises/06-extend-data-model/README.md)
 
-### Step 7: Advanced Analysis
-**Status:** 🔜 Coming Soon  
-**Focus:** Complex queries, advanced PivotTables, insights and reporting
 
 ## 🚀 Getting Started
 
