@@ -104,7 +104,7 @@ Now let's import the **productcategories.csv** file and load it into the Data Mo
 2. Go to the **Data** tab on the ribbon
 3. Click **Get Data** → **From File** → **From Text/CSV**
 4. Navigate to the `data` folder in the repository
-5. Select **productcategories.csv**
+5. Select **productsubcategories.csv**
 6. Click **Import**
 7. A preview window will appear showing the data
 
